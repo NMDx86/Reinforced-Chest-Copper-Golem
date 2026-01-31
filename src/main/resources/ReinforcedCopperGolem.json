@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.nmdx86.rcg.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ReinforcedCopperGolem"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

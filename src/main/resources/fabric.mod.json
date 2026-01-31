@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "reinfgolem",
+	"version": "${version}",
+	"name": "Reinforced Copper Golem",
+	"description": "Allows copper golems to recognize reinforced chests",
+	"authors": [
+		"nmdx86"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/reinfgolem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nmdx86.rcg.ReinforcedCopperGolemMod"
+		],
+		"modmenu": [
+			"com.nmdx86.rcg.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"ReinforcedCopperGolem.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"yet-another-config-lib": ">=3.0.0"
+	}
+}
