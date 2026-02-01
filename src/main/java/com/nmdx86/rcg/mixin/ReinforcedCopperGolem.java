@@ -37,7 +37,6 @@ public class ReinforcedCopperGolem {
                 return true;
             }
 
-            // Check config list
             for (String chestId : config.inputChests) {
                 try {
                     Identifier id = Identifier.of(chestId);
@@ -46,7 +45,6 @@ public class ReinforcedCopperGolem {
                         return true;
                     }
                 } catch (Exception e) {
-                    // Invalid identifier, skip
                     ReinforcedCopperGolemMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
                 }
             }
@@ -75,7 +73,6 @@ public class ReinforcedCopperGolem {
                 return true;
             }
 
-            // Check config list
             for (String chestId : config.outputChests) {
                 try {
                     Identifier id = Identifier.of(chestId);
@@ -84,7 +81,6 @@ public class ReinforcedCopperGolem {
                         return true;
                     }
                 } catch (Exception e) {
-                    // Invalid identifier, skip
                     ReinforcedCopperGolemMod.LOGGER.warn("Invalid chest identifier in config: {}", chestId);
                 }
             }
